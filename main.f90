@@ -150,7 +150,7 @@ program hello
 
     open(154, file = filename_united)
     na = 1
-    write(154,*) "# number x y z ux uy uz"
+    write(154,*) "# number x y z ux uy uz. total atoms", lines**2
     do i = 1,lines
         do j = 1,lines
             write(154,4412) na,rx(i,j),ry(i,j),rz(i,j),ux(i,j),uy(i,j),uz(i,j)
